@@ -1,1 +1,0 @@
-function buttonclick(){document.getElementById("button").innerHTML = "I made this to show scripting and buttons.";}
