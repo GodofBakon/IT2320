@@ -1,0 +1,62 @@
+﻿@model FinalProject.Models.HomeViewModel
+
+<html>
+
+    <head>
+        <link href="~/Styles/Home.css" rel="stylesheet" />
+        <title>Final Project</title>
+    </head>
+
+    <body>
+        <script src="~/Scripts/jquery-2.1.1.min.js"></script>
+        <script src="~/Scripts/jquery-ui.min.js"></script>
+        <script src="~/Scripts/Home.js"></script>
+        
+        <header>
+            <h1>Welcome to Cuyahoga Community College Student Services Online</h1>
+            <p>Cuyahoga Community College recognizes students' rights to access personal and academic records in accordance with the Family Educational Rights and Privacy Act of 1974 (FERPA) as amended by Public Law</p>
+        </header>
+
+        <div class="home">
+
+            <div>
+                <input class="username" type="text" placeholder="Username" /><br />
+                <input class="password" type="text" placeholder="Password"/><br />
+                <button onclick="loginFunction()">Login</button><br />
+            </div>
+            <div>
+                <input class="username" type="text" placeholder="Username" /><br />
+                <input class="password" type="text" placeholder="Password" /><br />
+                <input class="emailAdd" type="text" placeholder="E-Mail Address" /><br />
+                <input class="emailCon" type="text" placeholder="Repeat E-Mail Address" /><br />
+                <button onclick="createAccountFunction()">CreateAccount</button>
+            </div>
+
+        </div>
+
+
+        <div class="info">
+
+            <div>
+                <input class="emailAdd" type="text" placeholder="E-Mail Address" /><br />
+                <button onclick="createAccountFunction()">Update</button><br />
+            </div>
+            <div>
+                <input class="gpa" type="text" placeholder="GPA" /><br />
+                <button onclick="createAccountFunction()">Update</button><br />
+            </div>
+            <div>
+                <input class="elementName" type="text" placeholder="Element Name" /><br />
+                <input class="elementValue" type="text" placeholder="Element Value" /><br />
+                <button onclick="(addorUpdateFunction)">Add</button>
+            </div>
+        </div>
+
+        <footer>
+            <p>Cuyahoga Comuunity Colege</p>
+            <p>700 Carnegie Avenue, Cleveland, Ohio 44115</p>
+        </footer>
+
+    </body>
+
+</html>
